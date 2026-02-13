@@ -1,0 +1,31 @@
+.secondary {
+    background-color: #6699CC;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin: 5px;
+    padding: 5px;
+    list-style-type: none;
+    background-color: #BDBDBD;
+    border-radius: 5px;
+}
+
+li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: #FFFFFF;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
