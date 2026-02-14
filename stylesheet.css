@@ -1,3 +1,25 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+
+#nav-bar {
+    
+}
+
+#banner {
+    background-color: #003B6D;
+    padding: 10px;
+    color:#BFBFBF;
+    font-size: 18px;
+}
+
+#logo {
+    width: 35%;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+
 .secondary {
     background-color: #6699CC;
 }
@@ -7,11 +29,28 @@
     flex-direction: row;
 }
 
+.button {
+    background-color: #BFBFBF;
+    padding: 6px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.front {
+    justify-content: flex-start;
+}
+
+.back {
+    justify-content: flex-end;
+}
+
 li {
     margin: 5px;
     padding: 5px;
     list-style-type: none;
-    background-color: #BDBDBD;
     border-radius: 5px;
 }
 
