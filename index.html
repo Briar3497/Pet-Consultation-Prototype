@@ -13,7 +13,7 @@
                 <p id="slogan"><em>Evidence-based pet care advice for every pet lover</em></p>
             </section>
             <nav class="secondary grid-2" id="nav-bar">
-                <ul class="flex-row front">
+                <ul class="flex-row front no-bullet">
                     <li class="nav"><a href="index.html">Home</a></li>
                     <li class="nav"><a href="cats.html">Cats</a></li>
                     <li class="nav"><a href="dogs.html">Dogs</a></li>
@@ -27,7 +27,7 @@
             </nav>
         </header>
         <main>
-            <div class="container">
+            <div class="container" autofocus="true">
                 <section class="grid-2" id="consultation">
                     <div class="brand">
                         <h1><em>Have a new pet and need help?</em></h1>
@@ -47,7 +47,7 @@
                     </div>
                 </section>
             </div>
-            <section class="grid-3">
+            <section class="grid-3 page-links">
                 <a href="cats.html" class="flex-col">
                     <h2>Learn about Cats</h2>
                     <img src="images/cats.jpg" alt="Cat Icon">
@@ -100,11 +100,45 @@
                 </p>
             </section> 
             <form id="contact-form">
-                
+                <h1>Contact Us</h1>
+                <fieldset>
+                    <legend>Owner's Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" aria-required required> 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" aria-required required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" aria-required required>
+                    <label for="timezone">Timezone:</label>
+                    <input type="text" id="timezone" name="timezone" aria-required required>
+                </fieldset>
+                <fieldset>
+                    <legend>Pet Information</legend>
+                    <label for="pet-name">Name:</label>
+                    <input type="text" id="pet-name" name="pet-name" aria-required required>
+                    <label for="pet-type">Type:</label>
+                    <input type="text" id="pet-type" name="pet-type" aria-required required>
+                    <label for="pet-age">Age:</label>
+                    <input type="number" id="pet-age" name="pet-age" aria-required required>
+                </fieldset>
+                <div id="submit">
+                    <label for="submit"></label>
+                    <input type="submit" id="submit" value="Submit">
+                </div>
             </form>   
         </main>
         <footer>
-
+            <div id="footer">
+               <img src="images/favicon.png" alt="Paradigm Pet Professionals Logo">
+                <ul>
+                    <li><h2>Pet Information</h2></li>
+                    <li><a href="cats.html">Cats</a></li>
+                    <li><a href="dogs.html">Dogs</a></li>
+                    <li><a href="small-animals.html">Small Animals</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul> 
+            </div>
+            <p>&copy; 2026 Paradigm Pet Professionals. All rights reserved.</p>
         </footer>
     </body>
 </html>

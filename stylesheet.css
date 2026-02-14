@@ -6,22 +6,29 @@ body {
 
 .container {
     background-image: url(images/consultation.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    margin: 0 0 5% 0;
-    padding: 5%;
+    padding: 3%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
 }
 
 #consultation {
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(5px);
+    border-radius: 5px;
+    max-width: 750px;
+    justify-self: center;
     padding: 5%;
-    margin: 0 0 5% 0;
     display: grid;
-    z-index: 0;
     grid-template-areas:
         "brand brand"
         "services contact-us";
     
+}
+
+.page-links {
+    margin-top: 2em;
 }
 
 #slogan {
@@ -63,7 +70,7 @@ body {
 #banner {
     background-color: #6699CC;
     padding: 1%;
-    font-size: 16px;
+    font-size: 1.5em;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
@@ -148,7 +155,7 @@ a img {
     border-radius: 3px;
 }
 
-nav a:hover, main a:hover {
+nav a:hover, main a:hover, footer a:hover {
     color: #FFFFFF;
     opacity: 0.6;
 }
@@ -160,4 +167,87 @@ ul {
 
 .content {
     padding: 2em;
+}
+
+form {
+    border: 2px solid #676767;
+    border-radius: 6px;
+    padding: 1em;
+    margin: 2em;
+    background-color: #BFBFBF;
+    max-width: 700px;
+    min-width: 525px;
+    justify-self: center;
+    h1 {
+        text-align: center;
+    }
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #676767;
+    border-radius: 3px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5em 0 0.5em 0;
+    font-weight: bold;
+    text-align: right;
+    
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+    padding: 0.5em;
+    border: 1px solid #676767;
+    border-radius: 3px;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+input[type="submit"] {
+    background-color: #003b6d;
+    border-radius: 3px;
+    color: #BFBFBF;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5em 2em 0.5em 2em;
+}
+
+#submit {
+    justify-self: end;
+    width: fit-content;
+}
+
+footer {
+    background-color: #003b6d;
+    color: #BFBFBF;
+    text-align: start;
+    padding: 1em;
+    margin-top: 2em;
+    border-top: 2px solid black;
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: 250px auto;
+    margin-bottom: 2.5em;
+    img {
+        width: 220px;
+    }
+    a {
+        color: #BFBFBF;
+        text-decoration: none;
+    }
+    li {
+        list-style-type: none;
+    }
+    ul {
+        padding: 0;
+        justify-self: center;
+    }
 }
