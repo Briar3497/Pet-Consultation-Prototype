@@ -1,42 +1,112 @@
 body {
     margin: 0;
     width: 100%;
+    background-color: #6699CC;
 }
 
-#nav-bar {
+.container {
+    background-image: url(images/consultation.jpg);
+    background-size: cover;
+    margin: 0 0 5% 0;
+    padding: 5%;
+}
+
+#consultation {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 5%;
+    margin: 0 0 5% 0;
+    display: grid;
+    z-index: 0;
+    grid-template-areas:
+        "brand brand"
+        "services contact-us";
     
 }
 
-#banner {
-    background-color: #003B6D;
-    padding: 10px;
+#slogan {
+    text-align: center;
+    align-self: center;
+}
+
+.brand {
+    grid-area: brand;
+}
+
+.services {
+    grid-area: services;
+}
+
+.contact-us {
+    grid-area: contact-us;
+    justify-self: end;
+    align-self: end;
+    border-radius: 3px;
+    a {
+        padding: 15px;
+        margin: 5px;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: #003b6d;
+        color:#BFBFBF;
+    }
+}
+
+#nav-bar {
+    padding: 0 1% 0 1%;
     color:#BFBFBF;
-    font-size: 18px;
+    li {
+        width: fit-content;
+    }
+}
+
+#banner {
+    background-color: #6699CC;
+    padding: 1%;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 #logo {
-    width: 35%;
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    max-width: 200px;
     background-color: #FFFFFF;
     border-radius: 3px;
 }
 
 .secondary {
-    background-color: #6699CC;
+    background-color: #003b6d;
+
 }
 
-.flex {
+.flex-row {
     display: flex;
     flex-direction: row;
 }
 
-.button {
-    background-color: #BFBFBF;
-    padding: 6px;
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+        border-bottom: 1px solid #333333;
+    }
 }
 
-.grid {
+.nav {
+    background-color: #BFBFBF;
+    padding: 6px;
+    margin: 5px;
+    padding: 5px; 
+    border-radius: 5px;
+}
+
+.grid-2 {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
 }
 
 .front {
@@ -49,22 +119,45 @@ body {
 
 li {
     margin: 5px;
-    padding: 5px;
-    list-style-type: none;
+    padding: 5px; 
     border-radius: 5px;
 }
 
-li a {
+.no-bullet {
+    list-style-type: none;
+}
+
+a {
     text-decoration: none;
     color: #333333;
     font-weight: bold;
 }
 
-li a:hover {
+a img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #333333;
+    border-radius: 3px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 3px;
+}
+
+nav a:hover, main a:hover {
     color: #FFFFFF;
+    opacity: 0.6;
 }
 
 ul {
     padding: 0;
     margin: 0;
+}
+
+.content {
+    padding: 2em;
 }
