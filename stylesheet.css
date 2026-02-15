@@ -30,16 +30,6 @@ body {
     border-radius: 3px;
 }
 
-#placeholder {
-    height: 161.325px;
-    width: 598.4px;
-}
-
-#nav-banner{
-    position: fixed;
-    z-index: 5;
-}
-
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -151,7 +141,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #333333;
+    color: black;
     font-weight: bold;
 }
 
@@ -330,5 +320,16 @@ footer {
     .sidebar {
         border-bottom: 1px solid #333333;
         border-right: none;
+    }
+    #placeholder {
+        height: 161.325px;
+        width: auto;
+    }
+
+    #nav-banner{
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+        height: 161.325px;
     }
 }
