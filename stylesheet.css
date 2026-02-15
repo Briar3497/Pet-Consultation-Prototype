@@ -30,6 +30,16 @@ body {
     border-radius: 3px;
 }
 
+#placeholder {
+    height: 161.325px;
+    width: 598.4px;
+}
+
+#nav-banner{
+    position: fixed;
+    z-index: 5;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -46,12 +56,20 @@ body {
 
 .nav {
     background-color: #BFBFBF;
-    padding: 6px;
     margin: 5px;
     padding: 5px; 
     border-radius: 5px;
 }
 
+.focus { 
+    border-radius: 5px; 
+    background-color: #676767;
+    margin: 5px;
+    padding: 5px;
+    a {
+        color: #FFFFFF;
+    }
+}
 .container {
     background-image: url(images/consultation.jpg);
     background-repeat: no-repeat;
@@ -300,6 +318,8 @@ footer {
     padding-top: 1em;
     margin-top: 1em;
 }
+
+
 
 @media all and (max-width: 700px) {
     .grid-2 {
